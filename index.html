@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- スマートフォンでも正しい大きさで表示する設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="LiLi EXPO for women。女性のキャリアを考える個別相談会・セミナー・企業交流イベントです。"
+  >
+
+  <title>LiLi EXPO</title>
+
+  <!-- ブラウザのタブに表示するアイコン -->
+  <link rel="icon" href="assets/lili-logo.png">
+
+  <!-- デザインを読み込む -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- 変更用データを先に読み込む -->
+  <script src="js/content.js" defer></script>
+
+  <!-- データを画面に表示するプログラム -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <main>
+
+    <!-- ==================== ヘッダー：ここから ==================== -->
+    <header class="site-header">
+
+      <a class="brand" href="#top" aria-label="LiLi EXPO トップへ">
+        <img src="assets/上文字ありロゴ.png" alt="LiLi ロゴ">
+
+        <!-- 横長ロゴに変更した場合は、下のspanを削除しても大丈夫です -->
+        
+      </a>
+
+      <nav aria-label="メインメニュー">
+        <a href="#about">イベントについて</a>
+        <a href="#consultation">個別相談会</a>
+        <a href="#companies">参加企業</a>
+        <a href="#schedule">スケジュール</a>
+        <a class="nav-cta registration-link" href="#register">参加予約</a>
+      </nav>
+
+    </header>
+    <!-- ==================== ヘッダー：ここまで ==================== -->
+
+
+    <!-- ==================== メインビジュアル：ここから ==================== -->
+    <section class="hero" id="top">
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          WOMEN × CAREER × CONSULTATION
+        </p>
+
+        <h1>
+          <span>LiLi EXPO</span>
+          <small>for women</small>
+        </h1>
+
+        <p class="hero-lead">
+          経験豊富なキャリアのプロに、<br>
+          一対一で相談できる一日。
+        </p>
+
+        <p class="hero-sub">
+          インターネットだけでは分からないことを、
+          自分の悩みに合わせて直接相談できます。
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="button button-primary registration-link"
+            href="#register"
+          >
+            参加予約へ
+          </a>
+
+          <a
+            class="button button-ghost"
+            href="#consultation"
+          >
+            個別相談会を見る
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="hero-visual" aria-hidden="true">
+
+        <div class="orb orb-pink"></div>
+        <div class="orb orb-blue"></div>
+        <div class="orb orb-yellow"></div>
+
+        <div class="hero-card">
+          <img src="assets/lili-logo.png" alt="">
+          <p>LiLi</p>
+          <strong>EXPO</strong>
+          <span>for women</span>
+        </div>
+
+        <span class="spark spark-one">✦</span>
+        <span class="spark spark-two">✦</span>
+
+      </div>
+
+    </section>
+    <!-- ==================== メインビジュアル：ここまで ==================== -->
+
+
+    <!-- ==================== 開催日・時間・会場：ここから ==================== -->
+    <section class="event-strip" aria-label="開催概要">
+
+      <p>
+        開催日：
+        <strong id="eventDate"></strong>
+      </p>
+
+      <p>
+        開催時間：
+        <strong id="eventTime"></strong>
+      </p>
+
+      <p>
+        会場：
+        <strong id="eventVenue"></strong>
+      </p>
+
+    </section>
+    <!-- ==================== 開催日・時間・会場：ここまで ==================== -->
+
+
+    <!-- ==================== イベント説明：ここから ==================== -->
+    <section class="section intro" id="about">
+
+      <p class="section-kicker">ABOUT</p>
+
+      <div class="intro-grid">
+
+        <div>
+          <h2>
+            自分だけの悩みに、<br>
+            具体的なヒントを。
+          </h2>
+        </div>
+
+        <div class="intro-copy">
+
+          <p>
+            LiLi EXPOは、これからの働き方やキャリアについて、
+            一対一で相談できる個別相談会を中心としたイベントです。
+          </p>
+
+          <p>
+            企業の担当者やキャリアのプロと直接話すことで、
+            一般的な情報だけでは分からないことを、
+            自分の状況に合わせて具体的に相談できます。
+          </p>
+
+          <p>
+            個別相談会のほか、企業を知るためのセミナーや
+            企業座談会も開催予定です。
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- ==================== イベント説明：ここまで ==================== -->
+
+
+    <!-- ==================== 個別相談会の特徴：ここから ==================== -->
+    <section
+      class="section consultation-section"
+      id="consultation"
+    >
+
+      <div class="section-heading">
+
+        <div>
+          <p class="section-kicker">PERSONAL CONSULTATION</p>
+          <h2>個別相談会</h2>
+        </div>
+
+        <p>
+          LiLi EXPOの中心となるコンテンツです。
+          キャリアや働き方について、一対一で相談できます。
+        </p>
+
+      </div>
+
+
+      <div class="feature-grid">
+
+        <article class="feature-card pink">
+          <span>01</span>
+
+          <h3>一対一で相談できる</h3>
+
+          <p>
+            周囲を気にせず、自分が今感じている悩みや疑問を
+            落ち着いて相談できます。
+          </p>
+        </article>
+
+
+        <article class="feature-card blue">
+          <span>02</span>
+
+          <h3>具体的な話を聞ける</h3>
+
+          <p>
+            一般的な情報ではなく、自分の経験や希望に合わせた
+            具体的なアドバイスを聞けます。
+          </p>
+        </article>
+
+
+        <article class="feature-card yellow">
+          <span>03</span>
+
+          <h3>次の行動が分かる</h3>
+
+          <p>
+            相談を通して考えを整理し、これから何をすればよいかを
+            見つけるきっかけになります。
+          </p>
+        </article>
+
+      </div>
+
+
+      <div class="consultation-message">
+
+        <strong>
+          まだ相談したいことがまとまっていなくても大丈夫です。
+        </strong>
+
+        <p>
+          「何から考えればいいか分からない」という段階から、
+          一緒に考えることができます。
+        </p>
+
+        <a
+          class="button button-primary registration-link"
+          href="#register"
+        >
+          個別相談会に申し込む
+        </a>
+
+      </div>
+
+    </section>
+    <!-- ==================== 個別相談会の特徴：ここまで ==================== -->
+
+
+    <!-- ==================== 参加企業：ここから ==================== -->
+    <section class="section companies" id="companies">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="section-kicker">COMPANIES</p>
+          <h2>参加企業</h2>
+        </div>
+
+        <p>
+          参加企業の詳細は、決まり次第順次お知らせします。
+        </p>
+
+      </div>
+
+      <!-- 参加企業はcontent.jsから自動で表示されます -->
+      <div class="company-grid" id="companyGrid"></div>
+
+    </section>
+    <!-- ==================== 参加企業：ここまで ==================== -->
+
+
+    <!-- ==================== 当日のコンテンツ全体：ここから ==================== -->
+    <section class="section schedule" id="schedule">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="section-kicker">PROGRAM</p>
+          <h2>当日のコンテンツ</h2>
+        </div>
+
+        <p>
+          開催時間と内容は仮予定です。
+          詳細が決まり次第更新します。
+        </p>
+
+      </div>
+
+
+      <!-- ---------- メイン企画・個別相談会：ここから ---------- -->
+      <article class="consultation-panel">
+
+        <div>
+          <p class="schedule-label">MAIN CONTENT</p>
+
+          <h3>個別相談会</h3>
+
+          <p>
+            キャリアや働き方について、
+            経験豊富な担当者へ一対一で相談できます。
+          </p>
+        </div>
+
+        <ul class="consultation-points">
+          <li>一対一で落ち着いて相談</li>
+          <li>自分の状況に合わせたアドバイス</li>
+          <li>相談内容が決まっていなくても参加可能</li>
+        </ul>
+
+        <a
+          class="button button-light registration-link"
+          href="#register"
+        >
+          個別相談会に申し込む
+        </a>
+
+      </article>
+      <!-- ---------- メイン企画・個別相談会：ここまで ---------- -->
+
+
+      <!-- ---------- セミナータイムテーブル：ここから ---------- -->
+      <article class="seminar-card">
+
+        <div class="seminar-intro">
+
+          <div>
+            <p class="schedule-label">SEMINAR</p>
+
+            <h3>セミナータイムスケジュール</h3>
+
+            <p>
+              時間と内容は、決まり次第こちらに掲載します。
+            </p>
+          </div>
+
+
+          <!-- LUXロゴはcontent.jsの設定から表示されます -->
+          <div
+            class="lux-logo-placeholder"
+            id="luxLogo"
+            aria-label="LUX公式ロゴ掲載予定"
+          ></div>
+
+        </div>
+
+
+        <!-- セミナーはcontent.jsから自動で表示されます -->
+        <div class="seminar-list" id="seminarList"></div>
+
+        <p class="logo-note" id="luxLogoNote"></p>
+
+      </article>
+      <!-- ---------- セミナータイムテーブル：ここまで ---------- -->
+
+
+      <!-- ---------- 企業座談会タイムテーブル：ここから ---------- -->
+      <article class="roundtable-card">
+
+        <div class="roundtable-heading">
+
+          <div>
+            <p class="schedule-label">ROUNDTABLE</p>
+            <h3>企業座談会</h3>
+          </div>
+
+          <p>
+            1回30分・各回の間に10分休憩を入れた、
+            全6回転の仮スケジュールです。
+          </p>
+
+        </div>
+
+        <!-- 座談会の時間はcontent.jsから自動で表示されます -->
+        <div class="round-list" id="roundList"></div>
+
+      </article>
+      <!-- ---------- 企業座談会タイムテーブル：ここまで ---------- -->
+
+    </section>
+    <!-- ==================== 当日のコンテンツ全体：ここまで ==================== -->
+
+
+    <!-- ==================== 会場アクセス：ここから ==================== -->
+    <section class="section access" id="access">
+
+      <div class="access-copy">
+
+        <p class="section-kicker">ACCESS</p>
+
+        <h2>会場アクセス</h2>
+
+        <p>
+          会場名・住所などの詳細は、決まり次第掲載します。
+          最寄り駅からのアクセス案内も公開予定です。
+        </p>
+
+        <dl>
+
+          <div>
+            <dt>会場</dt>
+            <dd id="accessVenue"></dd>
+          </div>
+
+          <div>
+            <dt>住所</dt>
+            <dd id="accessAddress"></dd>
+          </div>
+
+          <div>
+            <dt>最寄駅</dt>
+            <dd id="accessStation"></dd>
+          </div>
+
+        </dl>
+
+      </div>
+
+
+      <div
+        class="map-placeholder"
+        aria-label="会場マップ掲載予定"
+      >
+
+        <span>MAP / ACCESS VIDEO</span>
+
+        <strong>会場マップ・道案内動画</strong>
+
+        <p>
+          Googleマップまたは動画URLを設定してください
+        </p>
+
+      </div>
+
+    </section>
+    <!-- ==================== 会場アクセス：ここまで ==================== -->
+
+
+    <!-- ==================== よくある質問：ここから ==================== -->
+    <section class="section faq" id="faq">
+
+      <div class="faq-heading">
+        <p class="section-kicker">FAQ</p>
+        <h2>よくある質問</h2>
+      </div>
+
+      <!-- 質問はcontent.jsから自動で表示されます -->
+      <div class="faq-list" id="faqList"></div>
+
+    </section>
+    <!-- ==================== よくある質問：ここまで ==================== -->
+
+
+    <!-- ==================== 参加予約：ここから ==================== -->
+    <section class="cta-section" id="register">
+
+      <p>ENTRY</p>
+
+      <h2>
+        あなたのための答えを、<br>
+        見つけに行こう。
+      </h2>
+
+      <span id="entryNote"></span>
+
+      <a
+        class="button button-light registration-link"
+        href="#top"
+      >
+        参加予約フォーム（準備中）
+      </a>
+
+    </section>
+    <!-- ==================== 参加予約：ここまで ==================== -->
+
+
+    <!-- ==================== フッター：ここから ==================== -->
+    <footer>
+
+      <div class="brand footer-brand">
+        <img src="assets/lili-logo.png" alt="LiLi">
+        <span>LiLi EXPO</span>
+      </div>
+
+      <p>© LiLi Career</p>
+
+    </footer>
+    <!-- ==================== フッター：ここまで ==================== -->
+
+  </main>
+</body>
+</html>
